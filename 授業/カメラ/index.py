@@ -3,9 +3,6 @@
 
 import cv2
 cap = cv2.VideoCapture(0)
-cap.set(3,640)#width
-cap.set(4,480)#height
-cap.set(10,100)#brightness
 ret, frame = cap.read() # カメラから画像を読み込んでくる
 print(frame)
 cv2.imshow("frame", frame) # ウィンドウに表示させる
